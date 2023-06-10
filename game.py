@@ -22,12 +22,14 @@ current_job = ''
 showing_finger_up = '\U0001F446' 
 showing_finger = '\U0001F447'
 face_smiling = '\U0001F600'
+house_emoji = '\U0001F3E0'
+car_emoji = '\U0001F697'
+hamburger_emoji = '\U0001F354'
 price_house = 600
 cooldown = 4
 cash = 0
 need_house = price_house - cash
 count_house = 0
-count_car = 0
 count_car = 0
 count_apple = 0
 car = 400
@@ -219,6 +221,12 @@ while True:
         delete_message = int(input("Enter the number of messages to delete : "))
         if delete_message:
             for i in range(delete_message):
-             os.system('cls' if os.name == 'nt' else clear)
+             os.system('cls')
             print(f"{delete_message} messages deleted succesfully")
             a = input(">")
+    if a == 'list':
+        print(f"Car{car_emoji}(400 sarscoin)\n")
+        print(f"House {house_emoji} (600 sarscoin)\n")
+        print("\n")
+        print(f"Foods\n")
+        print(f'Hamburger {hamburger_emoji} (4 sarscoin)\n')
