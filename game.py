@@ -222,6 +222,3 @@ while True:
              os.system('cls' if os.name == 'nt' else clear)
             print(f"{delete_message} messages deleted succesfully")
             a = input(">")
-    else:
-        print("Unkmown command try again")
-        a = input(">")
